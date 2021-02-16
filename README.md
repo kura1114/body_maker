@@ -29,10 +29,8 @@ Things you may want to cover:
 |nick_name|string|null: false|
 |mail|string|null: false, unique: true|
 
-### Associations
-- has_many :targets
 
-## targetsテーブル
+## targetテーブル
 |Column|Type|Options|
 |------|----|-------|
 |target|string|null: false, unique: true|
@@ -43,7 +41,6 @@ Things you may want to cover:
 |user_id|references|null: false, foreign_key: true|
 
 ### Association
-- belongs_to :user
 - has_many :to_dos
 
 ## to_dosテーブル
