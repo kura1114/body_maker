@@ -22,3 +22,37 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+## usersテーブル
+|Column|Type|Options|
+|------|----|-------|
+|nick_name|string|null: false|
+|mail|string|null: false, unique: true|
+
+### Associations
+- has_many :targets
+
+## targetsテーブル
+|Column|Type|Options|
+|------|----|-------|
+|target|string|null: false, unique: true|
+|deadline|integer|null: false|
+|feedback|integer|null: false|
+|remind|integer|null: false|
+|rate|integer|null: false|
+|user_id|references|null: false, foreign_key: true|
+
+### Association
+- belongs_to :user
+- has_many :to_dos
+
+## to_dosテーブル
+|Column|Type|Options|
+|------|----|-------|
+|if|string|null, false|
+|then|string|null, false|
+|remind|integer|null, false|
+|target_id|references|null, false, foreign_key: true|
+
+### Association
+- belongs_to :target
