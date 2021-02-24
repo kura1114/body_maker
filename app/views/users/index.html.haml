@@ -1,2 +1,12 @@
-%h1 Users#index
-%p Find me in app/views/users/index.html.haml
+%head 
+  %meta{"charaset":"UTF-8"}
+  %link{"href":"user.scss", "rel":"stylesheet"}
+%header
+%body
+  = render "layouts/menu_bar"
+  .main 
+    .form
+      %input.form__name{"type":"text", "placeholder":"name"} 
+      %input.form__mail{"type":"text", "placeholder":"mail"} 
+      %input.form__target{"type":"text", "placeholder":"目標"} 
+      %input.form__done{"type":"submit", "value":"DONE"}

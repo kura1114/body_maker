@@ -1,0 +1,17 @@
+.menu_bar{
+  width: 10%;
+  background-color: #7fd9d2;
+  .menu{
+    list-style: none;
+    text-align: center;
+    ul{
+      border-bottom: 1px solid gray;
+      padding: 10px 0px;
+      cursor: pointer;
+    }
+    ul:hover{
+      background-color: azure;
+      color: black;
+    }
+  }
+}

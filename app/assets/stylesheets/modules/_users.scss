@@ -4,3 +4,30 @@
 * {
   box-sizing: border-box;
 }
+body{
+  display: flex;
+  height: 100vh;
+  color: gray;
+  font-family: sans-serif;
+  
+  .main{
+    width: 90%;
+    background-color: #e6f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .form{
+      input{
+        display: block;
+        margin-bottom: 50px;
+        height: 50px;
+        width: 500px;
+        border: 1px solid gray;
+      }
+      .form__done{
+        width: 200px;
+        margin-left: 150px;
+      }
+    }
+  }
+}
