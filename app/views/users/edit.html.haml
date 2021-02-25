@@ -1,0 +1,12 @@
+%head 
+  %meta{"charaset":"UTF-8"}
+  %link{"href":"user.scss", "rel":"stylesheet"}
+%header
+%body
+  = render "layouts/menu_bar"
+  .main 
+    .form
+      %input.form__name{"type":"text", "placeholder":"name"} 
+      %input.form__mail{"type":"text", "placeholder":"mail"} 
+      %input.form__password{"type":"text", "placeholder":"passward"} 
+      %input.form__done{"type":"submit", "value":"DONE"}
